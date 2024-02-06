@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+body{
+    background-color: rgba(3, 34, 235, 0.6);
+    background-color: #9ce698;
+    background-color: #ffffff;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+ font-family:  'Playfair Display', serif;
+    color: rgba(0, 0, 0, 0.6);
+}
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+ 
+h1{
+            font-size: 4rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        h2{
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin: 0; 
+        }
+
+        menu {
+padding: 0;
+
+        }
+        menu ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            padding: 0;
+            gap:1rem;
+        }
+        menu ul li{
+border-radius: 4rem;
+background-color: #fff;
+border: 2px solid #008080;
+padding: 0.5rem;
+width: 280px;
+transition: all 0.5s;
+
+        }
+
+    menu ul li a span{
+        background-color: #008080;
+        border-radius: 2rem;
+        color:#fff;
+        padding: 10px;
+        text-align: center;
+        width: 24px;
+    
+    }
+
+    menu ul li a:is(:link, :visited) {
+display: flex;
+align-items: center;
+gap: 1rem;
+text-decoration: none;
+color: #008080;
+    }
+    menu ul li:is(:hover){
+        background-color: #008080;
+        border: 2px solid #fff;
+    }
+
+    menu ul li:is(:hover) a{
+        color: #fff;
+    }
+
+    menu ul li:is(:hover) a span {
+        background-color: #fff;
+        color: #008080;
+    }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <h1>ID: 2770672</h1>
+        <h2>Tecnico en Desarrollo de software</h2>
+        <hr>
+        <menu>
+            <ul>
+
+<li>
+    <a href="01-wireframe/index.html" target="_blank"><span>01</span>Wireframe HIFI</a>
+</li>
+<li>
+<a href="01-wireframe/prototype.html" target="_blank"><span>02</span> prototype</a>
+</li>
+<li>
+<a href="#" target="_blank"><span>03</span>Style Guide</a>
+</li>
+<li>
+    <a href="#" target="_blank"><span>04</span>Mackup (Design)</a>
+</li>
+
+            </ul>
+        </menu>
+    </main>
+</body>
+</html>
