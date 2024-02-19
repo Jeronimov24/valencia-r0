@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Users</title>
+    <link rel="stylesheet" href="../01-wireframe/css/master.css">
+</head>
+<body>
+    <main>
+        <header class="nav level-1">
+            <a href="../users/index.html">
+            <img src="../images/iconback.svg" alt="Back">
+        </a>
+        
+            <img src="../images/LOGO.svg" alt="Logo">
+                   <menu class="mburguer">
+                    <a href="">
+            <img src="../images/mburger.svg" alt="Menu Burguer">
+        </a>
+        </menu>
+    </header>
+
+    <section class="create">
+        <h1>Add User</h1>
+        <a class="add" href="add.html">
+           <img src="/images/ico-add.sgv.svg" width="30px" alt="Add">
+            Add User
+        </a>
+        <form action="index.html" method="post">
+            <img src="../images/icon-upload.png" alt="" id="upload" width="240px">
+            <input type="file" name="photo" id="photo" accept="image/*">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="phone" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Add</button>
+        </form>
+            </section>
+            </main>
+            <script src="../js/sweetalert2.js"></script>
+            <script src="../js/jquery-3.7.1.js"></script>
+          <script>
+            $(document).ready(function () {
+                $('#upload').click(function (e) {
+                        e.preventDefault()
+                        $('photo').click()
+
+                })
+            })
+
+            $('#photo').change(function (e) {
+                e.preventDefault();
+                let reader = new FileReader()
+                reader.onload = function(event) {
+                    $('#upload').attr('src', event.target.result)
+                }
+                reader.readAsDataURL(this.files[0])
+            })
+
+          </script>
+        </body>
+        </html>
